@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+    int num,power;
+    int product=1;
+    cout<<"Enter Number :- ";
+    cin>>num;
+    cout<<"Raised To :- ";
+    cin>>power;
+    for(int i=1;i<=power;i++){
+        product = product*num;
+    }
+    cout<<product;
+    return 0;
+}
