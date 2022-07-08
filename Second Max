@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+int main() {    
+    // cout << "Hello world!";
+    int num[] = {7,8,9,8,1,2,3,0};
+    int fnum = num[0];
+    int snum[] = {};
+    int final;
+    int len = sizeof(num)/sizeof(num[0]);
+    
+    for(int i=1;i<len;i++){
+        if(num[i]>fnum){
+            fnum = num[i];
+        }
+    }
+    cout<<"First Max- "<<fnum<<endl;
+    
+    for(int i=0;i<len;i++){
+        if(fnum != num[i]){
+           snum[i] = num[i];
+        }
+    }
+    
+    final = snum[0];
+    for(int i=0;i<len;i++){
+        if(final<snum[i]){
+            final = snum[i];
+        }
+    }
+    cout<<"Second Max :- "<<final;
+    return 0;
+}
