@@ -1,0 +1,7 @@
+<?php
+    $str = "NAKSHATRA";
+    $strlen = strlen($str);
+    for ($i=$strlen-1; $i>=0; $i--) { 
+        echo $str[$i];
+    }
+?>
